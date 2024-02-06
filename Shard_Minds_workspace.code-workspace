@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../大一上/Code/Creative Computing/BouncingBall"
+		},
+		{
+			"path": "../../大一上/Code/Creative Computing/Cheese_puzzle"
 		}
 	]
 }
