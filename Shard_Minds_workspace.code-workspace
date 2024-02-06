@@ -9,5 +9,8 @@
 		{
 			"path": "../../大一上/Code/Creative Computing/Cheese_puzzle"
 		}
-	]
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Shared Minds"
+	}
 }
