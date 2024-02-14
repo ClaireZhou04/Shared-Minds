@@ -123,3 +123,22 @@ function onWindowResize() {
     console.log('Resized');
 }
 
+
+const sentences = ["Hello!", "How are you today?", "Nice to meet you!"];
+
+// Function to display a sentence from the array
+function displaySentence() {
+    // Get a random index from the array
+    const randomIndex = Math.floor(Math.random() * sentences.length);
+    
+    // Create a new paragraph element
+    const paragraph = document.createElement("p");
+    
+    // Set the font weight to bold
+    paragraph.style.fontWeight = "bold";
+    
+    paragraph.textContent = sentences[randomIndex];
+    
+    document.body.appendChild(paragraph);
+}
+

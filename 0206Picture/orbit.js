@@ -44,7 +44,7 @@ textbox.addEventListener("input", function() {
 
         document.body.appendChild(sentence);
     }
-    else if (textbox.value === "thank"||textbox.value === "thank you") {
+    else if (textbox.value === "thank") {
         textbox.style.left = "50%";
         textbox.style.top = "50%";
         textbox.style.transform = "translate(-50%, -50%)";
@@ -96,3 +96,35 @@ function animate() {
 }
 
 init3D();
+
+
+document.addEventListener("dragover", function(event) {
+    event.preventDefault();
+});
+
+document.addEventListener("drop", function(event) {
+    event.preventDefault();
+
+    const file = event.dataTransfer.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function(event) {
+        const texture = new THREE.TextureLoader().load(event.target.result);
+        const material = new THREE.MeshBasicMaterial({ map: texture });
+        cube.material = material;
+
+        const sentence = document.createElement("div");
+        sentence.textContent = "Wow, I like my new outfit, thank you!";
+
+        sentence.style.position = "absolute";
+        sentence.style.left = "50%";
+        sentence.style.top = "40%";
+        sentence.style.transform = "translate(-50%, -50%)";
+        sentence.style.fontSize = "26px";
+
+        document.body.appendChild(sentence);
+    };
+
+    reader.readAsDataURL(file);
+});
+
