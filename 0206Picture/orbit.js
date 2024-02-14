@@ -44,13 +44,23 @@ textbox.addEventListener("input", function() {
 
         document.body.appendChild(sentence);
     }
+    else if (textbox.value === "thank"||textbox.value === "thank you") {
+        textbox.style.left = "50%";
+        textbox.style.top = "50%";
+        textbox.style.transform = "translate(-50%, -50%)";
+
+        const sentence = document.createElement("div");
+        sentence.textContent = "And I will always be here for you!";
+
+        sentence.style.position = "absolute";
+        sentence.style.left = "50%";
+        sentence.style.top = "35%";
+        sentence.style.transform = "translate(-50%, -50%)";
+        sentence.style.fontSize = "26px";
+
+        document.body.appendChild(sentence);
+    }
 });
-
-
-
-
-
-
 
 function init3D() {
     scene = new THREE.Scene();
