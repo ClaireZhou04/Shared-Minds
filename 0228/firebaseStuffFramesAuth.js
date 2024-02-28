@@ -15,14 +15,12 @@ export function getUser() {
 
 export function initFirebase() {
     const firebaseConfig = {
-        apiKey: "AIzaSyA24_PfWA8bwsUgASC1zd7Tizi5JweA1ko",
-        authDomain: "claire--shared-minds.firebaseapp.com",
-        databaseURL: "https://claire--shared-minds-default-rtdb.firebaseio.com",
-        projectId: "claire--shared-minds",
-        storageBucket: "claire--shared-minds.appspot.com",
-        messagingSenderId: "17885137357",
-        appId: "1:17885137357:web:49b7a5f7e8c89782359c84",
-        measurementId: "G-REGW7KV36N"
+        apiKey: "AIzaSyAzis90Ue4BtPq248ske16BTbzdH1uRu0Q",
+        authDomain: "claire0228.firebaseapp.com",
+        projectId: "claire0228",
+        storageBucket: "claire0228.appspot.com",
+        messagingSenderId: "293242530569",
+        appId: "1:293242530569:web:fbe59d12c83a853d5a01d8"
       };
     app = initializeApp(firebaseConfig);
     //make a folder in your firebase for this example
