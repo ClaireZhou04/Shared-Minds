@@ -1,10 +1,15 @@
 {
 	"folders": [
 		{
+			"name": "Shared Minds",
 			"path": "."
 		},
 		{
+			"name": "BouncingBall",
 			"path": "../../大一上/Code/Creative Computing/BouncingBall"
+		},
+		{
+			"path": "C:/Users/clair/Desktop/Claire_Final/Claire_Final"
 		}
 	],
 	"settings": {
