@@ -1,12 +1,12 @@
 {
 	"folders": [
 		{
-			"name": "Shared Minds",
-			"path": "."
-		},
-		{
 			"name": "Claire_Final",
 			"path": "C:/Users/clair/Desktop/Claire_Final/Claire_Final"
+		},
+		{
+			"name": "Shared Minds",
+			"path": "."
 		},
 		{
 			"name": "BouncingBall",
